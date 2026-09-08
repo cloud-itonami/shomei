@@ -16,7 +16,7 @@
   impl can slot a portable HMAC here. `hmac.compare_digest` → `ct-equal` (constant-time).
 
   Closed-vocab / gate violations → ex-info; GatedError → an ex-info tagged :shomei/gated."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [shomei.methods.claims :as claims]
             [shomei.methods.factors :as f]))
 

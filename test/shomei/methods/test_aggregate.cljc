@@ -4,7 +4,7 @@
   `repr(c)` no-PII scan → `(pr-str c)` (the credential's string rendering). The `__main__`
   demo (`run(\"aggregate\", CASES)`) is omitted (clojure.test drives the suite)."
   (:require [clojure.test :refer [deftest is run-tests]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [shomei.methods.aggregate :refer [aggregate assurance-label did-hash
                                               is-covenant-bound to-w3c-vc]]))
 

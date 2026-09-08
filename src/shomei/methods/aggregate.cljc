@@ -9,7 +9,7 @@
   did-hash = blake2b-256(did) → base64url (hand-ported blake2b, NOT a host blake2b).
   Credential maps carry ::order metadata so any JSON serialization matches the Python
   json.dumps key order byte-for-byte."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [shomei.methods.blake2b :as b2]
             [shomei.methods.claims :as claims]
             [shomei.methods.factors :as f]))

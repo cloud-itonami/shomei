@@ -18,7 +18,7 @@
   here); the :clj path uses primitive longs.
 
   Stdlib only / no host crypto dependency."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 ;; ── IV (RFC 7693 §2.6) ────────────────────────────────────────────────────────
 (def ^:private IV

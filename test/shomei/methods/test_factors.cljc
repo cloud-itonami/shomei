@@ -3,7 +3,7 @@
   ADR-2606072100. clojure.test; `expect_raises(contains=…)` → `shomei.methods._t/expect-raises`.
   The Python `__main__` demo (`run(\"factors\", CASES)`) is omitted (clojure.test drives the suite)."
   (:require [clojure.test :refer [deftest is run-tests]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [shomei.methods._t :refer [expect-raises]]
             [shomei.methods.factors :as f]))
 

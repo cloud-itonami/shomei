@@ -13,7 +13,7 @@
   House style: the core (build/verify/aggregate) is pure; file I/O (seed read + report/JSON
   write) only at the #?(:clj) -main edge. Byte-parity target = out/identity-report.md +
   out/personhood-credentials.json (matches analyze.py)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [shomei.methods.blake2b :as b2]
             [shomei.methods.claims :as claims]
             [shomei.methods.factors :as f]

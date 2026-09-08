@@ -9,7 +9,7 @@
 
   ::order metadata pins FACTOR_CLASS / ALLOWED_PROOFS insertion order so any derived listing
   matches the Python dict-iteration order byte-for-byte (>8 entries)."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.set :as set]))
 
 ;; factorKind → factorClass (independence class). G8: assurance counts DISTINCT classes,
