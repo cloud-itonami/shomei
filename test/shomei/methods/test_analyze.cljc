@@ -5,7 +5,7 @@
   clojure.test. The end-to-end `run` is pure over the parsed seed (I/O at the #?(:clj) -main
   edge), so the membrane is exercised via `run` directly — same results."
   (:require [clojure.test :refer [deftest is run-tests testing]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [shomei.methods.factors :as f]
             [shomei.methods.claims :as c]
             [shomei.methods.revoke :as rev]

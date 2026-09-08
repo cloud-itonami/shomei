@@ -7,7 +7,7 @@
   `expect_raises(fn, contains=…)`: the body MUST raise, and (when `contains` is given) the
   message MUST include the substring. `run` is preserved as a thin `clojure.test` wrapper so a
   `(name, fn)` case list can still be executed verbatim."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [clojure.test :as t]))
 
 (defn expect-raises*

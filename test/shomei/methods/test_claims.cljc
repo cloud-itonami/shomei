@@ -5,7 +5,7 @@
   `(build-claim {:kebab-key …})`. The `canonical_claim_bytes` byte-membership checks read the
   bytes as a UTF-8 string. The `__main__` demo (`run(\"claims\", CASES)`) is omitted."
   (:require [clojure.test :refer [deftest is run-tests]]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [shomei.methods._t :refer [expect-raises]]
             [shomei.methods.claims :refer [build-claim canonical-claim-bytes
                                            external-subject-hash validate-claim]]))

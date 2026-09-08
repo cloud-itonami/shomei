@@ -13,7 +13,7 @@
 
   House style: claim is a Clojure map with the Python string keys; closed-vocab keys are
   strings; pure fns; I/O-free."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [shomei.methods.blake2b :as b2]
             [shomei.methods.factors :as f]))
 
@@ -54,7 +54,7 @@
   "Blake2b-256(salt ‖ 0x1f ‖ canonical-identifier) → base64url (G3 privacy-preserving linkage).
   The identifier is .strip().lower()-normalised (case-insensitive, whitespace-trimmed)."
   [salt identifier]
-  (let [norm (str/lower-case (str/trim (str identifier)))
+  (let [norm (str/lower (str/trim (str identifier)))
         msg (str salt (char 0x1f) norm)
         digest (b2/digest-bytes #?(:clj (.getBytes ^String msg "UTF-8")
                                    :cljs (vec (map #(.charCodeAt % 0) msg))) 32)]

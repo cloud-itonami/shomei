@@ -6,7 +6,7 @@
   永久記憶: a revocation is an APPEND-ONLY retraction, NEVER a deletion — the original claim's
   history is permanently retained. Aggregation recomputes assurance EXCLUDING revoked claims;
   the as-of record that the binding once existed never disappears."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [shomei.methods.factors :as f]))
 
 (defn validate-revocation

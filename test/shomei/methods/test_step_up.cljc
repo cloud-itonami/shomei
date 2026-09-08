@@ -6,7 +6,7 @@
   Pins the requirement against `assurance-level` (satisfying it reaches the target), and the G8
   invariant (identity-proof requirements only — no worth/behavior/rank field)."
   (:require [shomei.methods.factors :as f]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.test :refer [deftest is run-tests]]))
 
 (deftest already-at-target-is-met

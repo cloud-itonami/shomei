@@ -8,7 +8,7 @@
   same shape `json.loads` produces, so the offline analyzer keys on identical strings.
 
   Pure (regexless char scanner); file I/O only at the #?(:clj) edge."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (declare parse-value)
 
