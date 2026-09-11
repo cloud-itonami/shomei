@@ -1,6 +1,6 @@
-#!/usr/bin/env bb
+#!/usr/bin/env kbb
 ;; shomei 証明 — tests for the IAL step-up-requirement (constructive inverse of assurance-level).
-;; Run:  bb --classpath 20-actors 20-actors/shomei/methods/test_step_up.cljc
+;; Run:  kbb --classpath 20-actors 20-actors/shomei/methods/test_step_up.cljc
 (ns shomei.methods.test-step-up
   "Tests for step-up-requirement — what a member must add to reach a target Identity Assurance Level.
   Pins the requirement against `assurance-level` (satisfying it reaches the target), and the G8
