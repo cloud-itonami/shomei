@@ -5,7 +5,7 @@
   Every external-identity factor maps to exactly one independence CLASS; the Identity
   Assurance Level (IAL) is a pure function of the SET of verified factor classes — never of
   the person (G8). Closed-vocab keys are STRINGS (the Python factorKind/factorClass strings),
-  per the root CLAUDE.md convention. Pure fns; closed-vocab violations → ex-info.
+  per the root AGENTS.md convention. Pure fns; closed-vocab violations → ex-info.
 
   ::order metadata pins FACTOR_CLASS / ALLOWED_PROOFS insertion order so any derived listing
   matches the Python dict-iteration order byte-for-byte (>8 entries)."

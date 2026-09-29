@@ -57,4 +57,4 @@ cd methods && python3 analyze.py  # dry-run → methods/out/identity-report.md +
 - **No state-database** (G6, §0.4) — government ID is read locally; never queried from the state.
 - **PII never plaintext** (G3) — government identifiers are salted-hash + XChaCha20 CID only.
 
-See `CLAUDE.md` for the full 11-gate invariant set and `ADR-2606072100` for the design rationale.
+See `AGENTS.md` for the full 11-gate invariant set and `ADR-2606072100` for the design rationale.
