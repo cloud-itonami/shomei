@@ -3,7 +3,7 @@
 **DID**: `did:web:etzhayyim.com:actor:shomei` · **Tier**: B · **Status**: R0 · **ADR**: 2606072100
 **Parent**: ADR-2605260000 (L5 gov auth) · **R1 gate**: ADR-2606072300 (gov_auth R1)
 
-**Read the root `/CLAUDE.md` Charter + substrate rules first.** shomei-specific invariants below
+**Read the root `/AGENTS.md` Charter + substrate rules first.** shomei-specific invariants below
 make the Charter concrete for this actor; they OVERRIDE nothing.
 
 ## The one-sentence identity
